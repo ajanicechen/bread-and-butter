@@ -1,0 +1,26 @@
+.primary, .secondary{
+    &&:hover{
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    &&:active{
+        cursor: grabbing;
+    }
+}
+
+.primary{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--black);
+
+    padding: 7px 10px;
+    border-radius: 30px;
+    background: var(--yellow);
+}
+
+.secondary{
+    color: var(--yellow);
+    padding-bottom: 4px;
+    border-bottom: 1px solid;
+}
