@@ -1,4 +1,4 @@
-import styles from "./style.module.css"
+import styles from "./Style.module.css"
 interface Props {
     children?: string
     type: "primary" | "secondary"
