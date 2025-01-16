@@ -1,4 +1,7 @@
 .primary, .secondary{
+    height: fit-content;
+    width: fit-content;
+
     &&:hover{
         color: var(--white);
         cursor: pointer;
