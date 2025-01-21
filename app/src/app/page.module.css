@@ -2,18 +2,18 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 80px 23px;
-  padding: 0 19px;
+  padding: 60 19px;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(6, 1fr);
     gap: 96px 30px;
-    padding: 0 60px;
+    padding: 40px 60px;
   }
 
   @media (min-width: 1440px) {
     grid-template-columns: repeat(12, 1fr);
     gap: 152px 28px;
-    padding: 0 86px;
+    padding: 60px 86px;
   }
 }
 
