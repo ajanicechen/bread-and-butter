@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    @media (min-width: 768px) {
+        font-size: 120px;
+        flex-direction: row;
+        gap: 21px;
+    }
+}
+
+.block-quote {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.credentials {
+    font-size: 20px;
+}
+
+.quote {
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 26px;
+
+    font-size: 32px;
+    line-height: 41px;
+
+    @media (min-width: 768px) {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    @media (min-width: 1440px) {
+        font-size: 64px;
+        line-height: 71.68px;
+    }
+}
+
+.quote-mark {
+    font-family: 'Parabole-Display', serif;
+    color: var(--yellow);
+    font-size: 94px;
+    line-height: 85px;
+
+    @media (min-width: 768px) {
+        font-size: 120px;
+        line-height: 108px;
+    }
+}
