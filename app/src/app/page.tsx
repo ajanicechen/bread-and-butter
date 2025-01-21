@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import InputField from "@/components/molecules/inputField/Component";
 import Quote from "@/components/molecules/quote/Component";
 import Hero from "@/components/molecules/hero/Component";
+import Footer from "@/components/molecules/footer/Component";
 
 export default function Home() {
   return (
@@ -44,9 +45,7 @@ export default function Home() {
         </section>
       </main>
       <footer className={styles.footer}>
-        <h1>Join our next events</h1>
-        <p>Do you want to join our next Bread & Butter event? Leave your email and we’ll keep you up to date.</p>
-        <InputField />
+        <Footer />
       </footer>
       {/* <footer className={styles.footer}>
         <a
