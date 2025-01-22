@@ -17,12 +17,19 @@
   }
 }
 
+.nav-wrapper{
+  position: absolute;
+  grid-column: 1/-1;
+}
+
 .hero {
   display: flex;
   justify-content: center;
+  margin-top: 120px;
   grid-column: span 4;
 
   @media (min-width: 768px) {
+    margin-top: 86px;
     grid-column: 2/6;
   }
 
