@@ -19,11 +19,11 @@
 
     padding: 7px 10px;
     border-radius: 30px;
-    background: var(--yellow);
+    background: var(--accent);
 }
 
 .secondary{
-    color: var(--yellow);
+    color: var(--accent);
     padding-bottom: 4px;
     border-bottom: 1px solid;
 }

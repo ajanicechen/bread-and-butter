@@ -18,7 +18,6 @@
 }
 
 .nav-wrapper{
-  position: absolute;
   grid-column: 1/-1;
 }
 
@@ -44,6 +43,11 @@
   gap: 16px;
   font-size: 26px;
   line-height: 36px;
+
+  @media (min-width: 1440px) {
+    align-self: flex-start;
+    max-width: 914px;
+  }
 }
 
 .main {
@@ -59,7 +63,7 @@
 
   @media (min-width: 1440px) {
   align-items: center;
-    grid-column: 2/12;
+    grid-column: 1/-1;
     gap: 120px;
   }
 }
@@ -75,7 +79,7 @@
   } */
 
   @media (min-width: 1440px) {
-    width: 70%;    
+    width: 65%;    
   }
 }
 
@@ -97,7 +101,7 @@
 }
 
 .highlight {
-  color: var(--yellow);
+  color: var(--accent);
 }
 
 .underline{
