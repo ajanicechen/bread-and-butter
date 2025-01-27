@@ -1,0 +1,31 @@
+.toggle-group{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.button{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--black);
+
+    padding: 7px 10px;
+    border-radius: 30px;
+    border: none;
+
+    background: transparent;
+    color: var(--foreground);
+
+    &&:hover{
+        cursor: pointer;
+    }
+
+    &&:active{
+        cursor: grabbing;
+    }
+}
+
+.active{
+    background: var(--yellow);
+    color: var(--black)
+}
