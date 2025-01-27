@@ -12,7 +12,6 @@ export default function Hero() {
     <div className={Styles.hero}>
         <div className={Styles['logo-wrapper']}>
           <BnbLogo className={Styles.logo}/>
-        {/* <img className={Styles.logo} src='/images/b&b-white.svg' alt="bread and butter logo" /> */}
         </div>
     </div>
   );
