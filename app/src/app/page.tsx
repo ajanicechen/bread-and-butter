@@ -4,6 +4,7 @@ import Quote from "@/components/molecules/quote/Component";
 import Hero from "@/components/molecules/hero/Component";
 import Footer from "@/components/molecules/footer/Component";
 import Navbar from "@/components/molecules/navbar/Component";
+import Slider from "@/components/molecules/slider/Component";
 
 export default function Home() {
   return (
@@ -48,6 +49,10 @@ export default function Home() {
             <p>Additionally, websites that prioritize accessibility tend to rank higher on Google, as search engines reward sites with better usability and structure. This improved SEO translates to greater visibility, helping you reach more potential customers. </p>
             <p>Ultimately, by embracing accessibility, you not only foster inclusivity but also enjoy higher conversion rates, as more users can engage seamlessly with your content or services.</p>
           </div>
+        </section>
+
+        <section className={styles.slider}>
+          <Slider />
         </section>
       </main>
       <footer className={styles.footer}>
