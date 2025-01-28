@@ -7,7 +7,6 @@ import Styles from "./Style.module.css";
 import Arrow from "images/arrow.svg";
 import { images } from '@/data/images'
 
-
 export default function Slider() {
     return (
         <div className={Styles.container}>
@@ -30,7 +29,6 @@ export default function Slider() {
                     prevEl: '#prev-btn',
                     nextEl: '#next-btn',
                 }}
-                onSlideChange={() => console.log('Slide changed')}
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index} className={Styles.slide}>
