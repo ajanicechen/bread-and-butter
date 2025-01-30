@@ -7,10 +7,13 @@
   --purple: #A560FF;
   --green: #00C46D;
   --pink: #F3A0D6;
+  --red: #FF5252;
 
   /* default */
   --background: var(--white);
   --foreground: var(--black);
+  --accent: var(--orange);
+  --error: var(--red);
 }
 
 .dark-theme{

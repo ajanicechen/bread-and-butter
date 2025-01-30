@@ -1,17 +1,57 @@
+'use client';
 
-import Button from "@/components/atoms/button/Component";
 import Styles from "./Style.module.css";
+import { useState } from 'react';
 
-export default function inputField() {
+export default function InputField() {
+    const [email, setEmail] = useState<string>('');
+    const [error, setError] = useState<string>('');
+
+    // Regular expression for email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const submitHandler = (event: React.FormEvent) => {
+        event.preventDefault();
+
+        setError('');
+
+        if (email.trim() === '') {
+            setError('E-mail mag niet leeg zijn.');
+            return;
+
+        } else if (!emailPattern.test(email)) {
+            setError('Ongeldig e-mailadres.');
+            return;
+
+        } else {
+            setError('');
+            event.target.submit();
+        }
+    };
+
     return (
-        <div className={Styles.container}>
-            <label className={Styles.wrapper}>
-                E-mail 
-                <div className={Styles.form}>
-                    <input className={Styles.field} type="email" name="myInput" placeholder="naam@domeinnaam.nl" required/>
-                    <Button type="secondary">Sign up</Button>
-                </div>
+        <form onSubmit={submitHandler} className={Styles.container} noValidate>
+            <label className={Styles.label}>
+                E-mail
+                <input
+                    className={`${Styles.field} ${error ? Styles.error : ''}`}
+                    autoComplete="email"
+                    type="email"
+                    name="email"
+                    placeholder="naam@domeinnaam.nl"
+                    onChange={(e) => setEmail(e.target.value)}
+                    aria-describedby={error ? 'email-error' : undefined}
+                    required
+                />
             </label>
-        </div>
+            <div className={Styles['btn-wrap']}>
+                <button className={Styles.button} type="submit">Sign up</button>
+            </div>
+            {error && (
+                <span id="email-error" className={Styles['error-msg']}>
+                    {error}
+                </span>
+            )}
+        </form>
     );
-  }
+}

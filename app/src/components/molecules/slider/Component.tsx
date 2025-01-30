@@ -11,11 +11,11 @@ export default function Slider() {
     return (
         <div className={Styles.container}>
             <div className={Styles['btn-group']}>
-                <button id="prev-btn" className={Styles.button}>
+                <button id="prev-btn" className={Styles.button} aria-label='Vorige afbeelding'>
                     <Arrow className={Styles['prev-arrow']} />
                 </button>
 
-                <button id="next-btn" className={Styles.button}>
+                <button id="next-btn" className={Styles.button} aria-label='Volgende afbeelding'>
                     <Arrow className={Styles['next-arrow']} />
                 </button>
             </div>
