@@ -52,7 +52,7 @@
 }
 
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: var(--white;);
     --foreground: var(--black;);
@@ -71,7 +71,7 @@ body {
   background: var(--background);
   font-family: 'Antique-Legacy', serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 28px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -81,7 +81,7 @@ body {
   }
 
   @media (min-width: 1440px) {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 31px;
   }  
 }
@@ -89,17 +89,17 @@ body {
 h1 {
   font-family: 'Antique-Legacy', serif;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 0.25rem;
   text-transform: uppercase;
   line-height: 58px;
 
   @media (min-width: 768px) {
-    font-size: 91px;
+    font-size: 5.5rem;
     line-height: 82px;
   }
 
   @media (min-width: 1440px) {
-    font-size: 120px;
+    font-size: 7.5rem;
     line-height: 108px;
   }
 }
@@ -107,12 +107,12 @@ h1 {
 h2{
   color: var(--accent);
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 34px;
   margin-bottom: 21px;
 
   @media (min-width: 1440px) {
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 36px;
   }
 }

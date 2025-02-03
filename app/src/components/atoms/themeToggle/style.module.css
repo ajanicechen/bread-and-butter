@@ -5,7 +5,7 @@
 }
 
 .button{
-    font-size: 10px;
+    font-size: 0.625rem;
     text-transform: uppercase;
     color: var(--black);
 

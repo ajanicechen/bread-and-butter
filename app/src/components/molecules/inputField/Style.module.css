@@ -5,12 +5,12 @@
     align-items: left;
     gap: 32px;
 
-    font-size: 20px;
+    font-size: 1.25rem;
 
     @media (min-width: 768px) {
         flex-direction: row;
         align-items: end;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    font-size: 18px;
+    font-size: 1.125rem;
     min-width: 100%;
 
     @media (min-width: 768px) {
@@ -26,12 +26,12 @@
     }
 
     @media (min-width: 1440px) {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 .field {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--foreground);
     padding: 16px 24px;
     background: var(--background);
@@ -64,7 +64,7 @@
     border: none;
     border-bottom: 1px solid;
     color: var(--accent);
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
 
     &:hover {

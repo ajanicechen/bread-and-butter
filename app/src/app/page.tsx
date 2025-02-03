@@ -42,7 +42,7 @@ export default function Home() {
         <Quote name='Tizian Fendt' role='UX designer' company="JUST">Digital Accessibility improves the experience for all users, not just those with disabilities.</Quote>
         
         <section className={styles.section}>
-          <h2>Why we need a mindset shift</h2>
+          <h2 className={styles['m0']}>Why we need a mindset shift</h2>
           <div className={styles['p-spacing']}>
             <p>Neglecting to prioritize accessibility not only excludes a significant portion of your audience but also means missing out on a range of advantages that can greatly enhance your digital presence. Accessible design leads to a better overall user experience for everyone, as it ensures your website is intuitive and easy to navigate. </p>
             <p>It also often results in faster loading times, as accessibility improvements typically streamline functionality and optimize performance. </p>
