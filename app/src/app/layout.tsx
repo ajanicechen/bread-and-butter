@@ -13,6 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="JUST Bread and butter event" content="JUST" />
       <body>
         {children}
       </body>
