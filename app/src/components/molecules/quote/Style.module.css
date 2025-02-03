@@ -4,7 +4,7 @@
     gap: 28px;
 
     @media (min-width: 768px) {
-        font-size: 120px;
+        font-size: 7.5rem;
         flex-direction: row;
         gap: 21px;
     }
@@ -17,7 +17,7 @@
 }
 
 .credentials {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .quote {
@@ -28,16 +28,16 @@
     position: relative;
     gap: 26px;
 
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 41px;
 
     @media (min-width: 768px) {
-        font-size: 44px;
+        font-size: 2.75rem;
         line-height: 50px;
     }
 
     @media (min-width: 1440px) {
-        font-size: 64px;
+        font-size: 4rem;
         line-height: 71.68px;
     }
 }
@@ -45,11 +45,11 @@
 .quote-mark {
     font-family: 'Parabole-Display', serif;
     color: var(--accent);
-    font-size: 94px;
+    font-size: 5.875rem;
     line-height: 85px;
 
     @media (min-width: 768px) {
-        font-size: 120px;
+        font-size: 7.5rem;
         line-height: 108px;
     }
 }
