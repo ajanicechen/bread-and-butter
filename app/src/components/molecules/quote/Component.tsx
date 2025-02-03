@@ -14,7 +14,7 @@ export default function Quote(props: Props) {
                 <blockquote className={Styles.quote}>
                     <p>{props.children}</p>
                 </blockquote>
-                <p className={Styles.credentials}>{props.name}, {props.role} at {props.company}</p>
+                <p className={Styles.credentials}>{`${props.name}, ${props.role} at ${props.company}`}</p>
             </div>
         </div>
     );
