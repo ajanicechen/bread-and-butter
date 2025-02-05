@@ -1,6 +1,7 @@
 .hero {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -24,5 +25,26 @@
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+.sticker-wrapper{
+    position: absolute;
+    pointer-events: none;
+    height: fit-content;
+    width: fit-content;
+    z-index: 1;
+    transform: rotate(8deg);
+    top: 96%;
+    left: 0;
+
+    @media (min-width: 768px) {
+        top: 96%;
+        left: -24%;
+    }
+
+    @media (min-width: 1440px) {
+        top: 88%;
+        left: -48%;
     }
 }
