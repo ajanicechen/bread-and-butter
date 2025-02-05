@@ -15,6 +15,7 @@
 .footer{
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 32px;
 }
 
@@ -35,5 +36,21 @@
 
     @media (min-width: 768px) {
         font-size: 1.25rem;
+    }
+}
+
+.sticker-wrapper{
+    position: absolute;
+    pointer-events: none;
+    height: fit-content;
+    width: fit-content;
+    z-index: 1;
+    transform: rotate(8deg);
+    top: 96%;
+    left: 48%;
+
+    @media (min-width: 1440px) {
+        top: 64%;
+        left: 108%;
     }
 }
