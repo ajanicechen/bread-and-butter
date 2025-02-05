@@ -5,17 +5,16 @@ import Hero from "@/components/molecules/hero/Component";
 import Footer from "@/components/molecules/footer/Component";
 import Navbar from "@/components/molecules/navbar/Component";
 import Slider from "@/components/molecules/slider/Component";
+import Sticker from "@/components/atoms/sticker/Component";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <nav className={styles['nav-wrapper']}>
-        <Navbar/>
+        <Navbar />
       </nav>
       <header className={styles.hero}>
-        {/* <div> */}
-          <Hero />  
-        {/* </div> */}
+        <Hero />
       </header>
       <main className={styles.main}>
         <section className={styles.introduction}>
@@ -26,10 +25,13 @@ export default function Home() {
             <p>On November 28, we hosted our first Bread & Butter event—a moment to share insights and connect with clients.</p>
             <p>This edition focused on “The Future of Accessibility”, featuring a workshop by the inspiring <span className={`${styles.highlight} ${styles.underline}`}>Fresco Sam-Sin</span> and a talk from Tizian Fendt, UX Designer at JUST.</p>
           </div>
+          <div className={styles['sticker-wrapper']}>
+            <Sticker />
+          </div>
         </section>
 
         <section className={styles.section}>
-          <div>          
+          <div>
             <p>Together, we explored innovative ideas and actionable strategies to make accessibility a priority in today’s ever-evolving world.</p>
             <p>Stay tuned for our next Bread & Butter event, where we’ll continue fostering meaningful conversations and empowering our community with knowledge.</p>
           </div>
@@ -38,9 +40,9 @@ export default function Home() {
             <p>Accessibility matters because 1.3 billion people worldwide, including 2 million in the Netherlands, experience significant disabilities, and over half of Dutch smartphone users rely on accessibility settings to navigate their devices.</p>
           </div>
         </section>
-        
+
         <Quote name='Tizian Fendt' role='UX designer' company="JUST">Digital Accessibility improves the experience for all users, not just those with disabilities.</Quote>
-        
+
         <section className={styles.section}>
           <h2 className={styles['m0']}>Why we need a mindset shift</h2>
           <div className={styles['p-spacing']}>
